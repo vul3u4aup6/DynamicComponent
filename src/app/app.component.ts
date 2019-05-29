@@ -1,6 +1,6 @@
 import { Component,ViewChild,ComponentFactoryResolver,Input,ViewContainerRef,ComponentRef } from '@angular/core';
-import { DynamicComponentDirective } from './DynamicComponentDirective';
-import { DynamicComponentService } from './DynamicComponentService';
+import { DynamicComponentDirective } from './directive/DynamicComponentDirective';
+import { DynamicComponentService } from '../service/DynamicComponentService';
 import { CloneVisitor } from '@angular/compiler/src/i18n/i18n_ast';
 @Component({
   selector: 'app-root',

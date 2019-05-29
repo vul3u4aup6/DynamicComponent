@@ -1,5 +1,5 @@
-import{ComponentAComponent} from './ComponentAComponent';
-import{ComponentBComponent} from './ComponentBComponent';
+import{ComponentAComponent} from '../app/component/ComponentAComponent';
+import{ComponentBComponent} from '../app/component/ComponentBComponent';
 import { Injectable } from '@angular/core';
 @Injectable()
 export class DynamicComponentService {
