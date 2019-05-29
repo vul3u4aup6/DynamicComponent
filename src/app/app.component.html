@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<style>
+p{
+  font-size: 12em;
+}
+label{
+font-size: 20em;
+
+}
+</style>
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  文字大小：<input [(ngModel)]="inputValue"/>
+  顏色：<input type="color" [(ngModel)]="color">
+  </div>
+<h2>Here are some links to help you start: </h2>
+<input type="radio" id="showComponentA" name="showComponent" value="componentA" (change)="displayComponent('componentA')" />
+<a for="showComponentA">Component A</a>
+
+<input type="radio" id="showComponentB" name="showComponent" value="componentB" (change)="displayComponent('componentB')" />
+<a for="showComponentB">Component B</a>
+
+<input type="radio" id="showComponentC" name="showComponent" value="componentC" (change)="displayComponent('componentC')" />
+<a for="showComponentC">Component C</a>
+
+<!-- 原來多行的Components濃縮成一行 -->
+<ng-template appDynamicComponent></ng-template>
+<router-outlet></router-outlet>
